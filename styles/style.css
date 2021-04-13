@@ -1,12 +1,24 @@
-@import url(//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold);
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+:root {
+    --header-height: 75px;
+    --footer-height: 40px;
+    --text: #1A1A1A;
+    --green: #00B172;
+    --white: #FFF
+  }
 
 body {
-    font-family: "Circular Spotify Tx T Bold"
+    font-family: 'Maven Pro';
+    margin: 0;
 }
 
 nav {
-    height: 80px;
+    top: 0;
+    height: var(--header-height);
     position: fixed;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 1;
     width: 100%;
 }
 
@@ -16,6 +28,8 @@ nav {
 
 nav .logo {
     height: 50px;
+    padding: 5px;
+    margin: 8px;
 }
 
 .flex {
@@ -24,6 +38,27 @@ nav .logo {
 
 .justify-content-between {
     justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.justify-content-center  {
+    justify-content: center;
 }
 
 .align-items-center {
@@ -46,11 +81,26 @@ li {
     padding: 5px;
 }
 
-/* .banner {
+#main {
+    top: var(--header-height); 
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.image {
+
+    height: 60vh;
+}
+
+.banner {
     background-size: cover;
     background-position: center;
     padding: 150px 0;
-  } */
+    height: 50vh;
+  } 
+
+
   
   .banner h1 {
     margin: 0;
@@ -65,12 +115,85 @@ li {
     color: white;
     opacity: .7;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  } 
+
+  .height-100 {
+      height: 100%;
   }
-/*
-Colors:
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+  .container {
+    margin: 40px;
+    padding: 10px;
+    width: 80%;
+  }
 
-*/
+  .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+  }
+
+  .icon {
+      height: 50px;
+  }
+
+  .block h2 {
+      color: #00B172
+  }
+
+  .description {
+      margin-top: 40px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+  }
+
+  .description h1 {
+      padding: 5px;
+    border-bottom: 2px solid var(--green);
+  }
+
+  .background-green {
+      background-color: var(--green)
+  }
+
+  .width-90 {
+      width: 90%;
+  }
+
+
+.last-part {
+    background-color: var(--green);
+    width: 80%;
+    color: var(--white);
+    min-height: 550px;;
+   margin-bottom: 80px;
+}
+
+.last-part h1 {
+    border-bottom: 2px solid;
+
+    margin-top: 30px;
+    padding-bottom: 6px;
+}
+
+#image-kanye {
+    height: 450px;
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.text {
+    margin-left: 60px
+}
+
+.image {
+    margin-right: 60px;
+}

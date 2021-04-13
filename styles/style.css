@@ -1,3 +1,71 @@
+@import url(//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold);
+
+body {
+    font-family: "Circular Spotify Tx T Bold"
+}
+
+nav {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+nav .logo {
+    height: 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.black {
+    color: black;
+}
+
+li {
+    padding: 5px;
+}
+
+/* .banner {
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+  } */
+  
+  .banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .banner p {
+    font-size: 20px;
+    color: white;
+    opacity: .7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
 /*
 Colors:
 
